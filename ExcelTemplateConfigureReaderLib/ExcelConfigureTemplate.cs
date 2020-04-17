@@ -3,9 +3,9 @@ using GeneralConfigureInstance;
 using OfficeOpenXml;
 namespace ExcelTemplateConfigureReaderLib
 {
-    public class ExcelConfigureCollection : IConfigureCollection
+    public class ExcelConfigureSet : IConfigureSet
     {
-        public ExcelConfigureCollection (FileInfo fileInfo)
+        public ExcelConfigureSet (FileInfo fileInfo)
         {
             Package = new ExcelPackage (fileInfo);
             // Package.Workbook.Worksheets
@@ -17,7 +17,7 @@ namespace ExcelTemplateConfigureReaderLib
         {
             Package.Dispose ();
         }
-        ~ExcelConfigureCollection ()
+        ~ExcelConfigureSet ()
         {
             Close ();
         }
@@ -29,17 +29,30 @@ namespace ExcelTemplateConfigureReaderLib
         {
             Package.SaveAs (new FileInfo (filePath));
         }
-        class ExcelConfigureList : IConfigureList
+        class ExcelConfigureCollection : IConfigureCollection
         {
-            public ExcelConfigureList (ExcelWorksheet sheet)
+            public ExcelConfigureCollection (ExcelWorksheet sheet)
             {
                 var cell = sheet.Cells[0, 1];
             }
-            class ExcelConfigureUnit : IConfigureUnit
+            class ExcelConfigureList : IConfigureList
             {
-                public ExcelConfigureUnit ()
+                public ExcelConfigureList ()
+                {
+
+                }
                 public string Key { get; set; }
                 public string Value { get; set; }
+                class ExcelConfigureUnit : IConfigureUnit
+                {
+                    public ExcelConfigureUnit (string key, ExcelRange cell)
+                    {
+                        Key = key;
+                    }
+                    ExcelRange cell { get; set; }
+                    public string Key { get; }
+                    public string Value { get => cell.GetValue<string> (); set => cell.Value = value; }
+                }
             }
 
         }

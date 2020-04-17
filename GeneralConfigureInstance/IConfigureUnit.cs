@@ -2,7 +2,7 @@
 
 namespace GeneralConfigureInstance
 {
-    public interface IConfigureUint
+    public interface IConfigureUnit
     {
         string Key { get; }
         string Value { get; set; }
