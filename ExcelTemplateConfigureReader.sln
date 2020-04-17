@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTemplateConfigureReaderLib", "ExcelTemplateConfigureReaderLib\ExcelTemplateConfigureReaderLib.csproj", "{2608C143-1621-4B02-BFB8-C39C22B63F12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelTemplateConfigureReaderTestConsole", "ExcelTemplateConfigureReaderTestConsole\ExcelTemplateConfigureReaderTestConsole.csproj", "{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{2608C143-1621-4B02-BFB8-C39C22B63F12}.Release|x64.Build.0 = Release|Any CPU
 		{2608C143-1621-4B02-BFB8-C39C22B63F12}.Release|x86.ActiveCfg = Release|Any CPU
 		{2608C143-1621-4B02-BFB8-C39C22B63F12}.Release|x86.Build.0 = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|x64.Build.0 = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Debug|x86.Build.0 = Debug|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|x64.ActiveCfg = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|x64.Build.0 = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|x86.ActiveCfg = Release|Any CPU
+		{422E3BA3-B8BF-46CA-B1CC-35CC3A2CD95D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
