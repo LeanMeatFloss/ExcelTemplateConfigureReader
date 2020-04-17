@@ -27,7 +27,7 @@ namespace ExcelTemplateConfigureReaderLib
         }
         public void SaveAs (string filePath)
         {
-            Package.SaveAs (filePath);
+            Package.SaveAs (new FileInfo (filePath));
         }
         class Excel
 
