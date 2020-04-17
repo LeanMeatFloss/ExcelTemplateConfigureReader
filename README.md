@@ -1,6 +1,6 @@
 # ExcelTemplateConfigureReader
 
-A useful tools for reading Excel Configures to export a Key-Value lists based on EEPLUS and .net core.
+A useful tools for reading Excel Configures to export a Key-Value lists based on EPPLUS and .net core.
 
 ## Description
 
