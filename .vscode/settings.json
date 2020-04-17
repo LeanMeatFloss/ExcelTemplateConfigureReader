@@ -1,5 +1,4 @@
 {
-    "cSpell.words": [
-        "eeplus"
-    ]
+  "cSpell.words": ["EPPLUS", "eeplus"],
+  "cSpell.enableFiletypes": ["!sln"]
 }
